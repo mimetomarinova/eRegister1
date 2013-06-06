@@ -11,7 +11,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
     <p class="style10">
-        <strong>Новини!</strong></p>
+        <strong>Новини</strong></p>
     <div style="margin-left: 70px; text-align: left;">
         <asp:ListView ID="ListView1" runat="server" EnableViewState="False">
         <ItemTemplate>
