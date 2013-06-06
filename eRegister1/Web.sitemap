@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="">
+    <siteMapNode url="Users" title="" description="">
+      <siteMapNode url="Default.aspx" title="Начало" />
+      <siteMapNode url="Schoole.aspx" title="Училище" >
+        <siteMapNode url="Teachers.aspx" title="Състав" />
+      </siteMapNode>
+      <siteMapNode url="eRegister.aspx" title="Електронен дневник" />
+    </siteMapNode>
+    <siteMapNode url="~/Student/Student" title=""  description="">
+      <siteMapNode url="~/Student/DefaultStudent.aspx" title="Начало" />
+      <siteMapNode url="~/Student/ChangePassword.aspx" title="Смяна на парола"  />
+      <siteMapNode url="~/Student/Schedules.aspx" title="Програма"  />
+      <siteMapNode url="~/Student/SchoolReport.aspx" title="Бележник"  />
+      <siteMapNode url="~/Student/Absences.aspx" title="Отсъствия"  />
+      <siteMapNode url="~/Student/Massages.aspx" title="Съобщения" >
+        <siteMapNode url="~/Student/NewMessages.aspx" title="Ново съобщение" />
+        <siteMapNode url="~/Student/SentMessages.aspx" title="Изпратени" />
+        <siteMapNode url="~/Student/Draft.aspx" title="Чернови" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Admin/Admin" title=""  description="">
+      <siteMapNode url="~/Admin/DefaultAdmin.aspx" title="Администриране" >
+        <siteMapNode url="~/Admin/Schoole.aspx" title="Училище"  />
+        <siteMapNode url="~/Admin/StudyYear.aspx" title="Учебна година"  />
+        <siteMapNode url="~/Admin/Classes.aspx" title="Клас"  />
+        <siteMapNode url="~/Admin/Divisions.aspx" title="Паралелкa"  />
+        <siteMapNode url="~/Admin/Profil.aspx" title="Профил"  />
+        <siteMapNode url="~/Admin/Subjects.aspx" title="Предмети"  />
+        <siteMapNode url="~/Admin/Teachers.aspx" title="Учители"  />
+        <siteMapNode url="~/Admin/EditTeachers.aspx" title="Редакция на учител"  />
+        <siteMapNode url="~/Admin/ClassDevisionDetails.aspx" title="Класове/Ученици"  />
+        <siteMapNode url="~/Admin/Schedules.aspx" title="Програма"  />
+        <siteMapNode url="~/Admin/Gallery.aspx" title="Галерия"  />
+        <siteMapNode url="~/Admin/News.aspx" title="Новини"/>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Massages.aspx" title="Съобщения" >
+        <siteMapNode url="~/Admin/NewMessages.aspx" title="Ново съобщение" />
+        <siteMapNode url="~/Admin/SentMessages.aspx" title="Изпратени" />
+       
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Query.aspx" title="Справки" >
+        <siteMapNode url="~/Admin/AvSuccess.aspx" title="Среден успех" />
+        <siteMapNode url="~/Admin/SuccessStudent.aspx" title="Успех ученик" />
+        <siteMapNode url="~/Admin/Absence.aspx" title="Отсъствия" />
+      </siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

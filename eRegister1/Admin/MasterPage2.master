@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage1.Master" AutoEventWireup="true"
+    CodeBehind="MasterPage2.master.cs" Inherits="eRegister1.MasterPage2" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .Hide { display:none; }
+        .style10
+        {
+            height: 130px;
+        }
+        .style11
+        {
+            height: 130px;
+            width: 116px;
+        }
+        .style12
+        {
+            width: 116px;
+        }
+        .style14
+        {
+            width: 100%;
+        }
+        
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
+    <table style="vertical-align: top; width: 803px;">
+        <tr style="vertical-align: top">
+            <td style="text-align: left; padding-left: 20px;" class="style11" align="center">
+                <br />
+              
+                   <div align="center"> 
+                       <asp:Label ID="LabelMenu" runat="server" Text="МЕНЮ" BackColor="#FFFFCC" 
+                    Font-Bold="True" Font-Size="Medium" ForeColor="#990000"></asp:Label> <br /> <br />
+               
+                </div>
+                
+                <asp:Menu ID="Menu2" runat="server" DataSourceID="SiteMapDataSource1" BackColor="#FFFBD6"
+                    Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" DynamicHorizontalOffset="2"
+                    StaticSubMenuIndent="10px" style="font-size: medium">
+                    <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                    <DynamicMenuItemStyle BorderColor="Maroon" BorderStyle="Double" BorderWidth="1px"
+                        HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                </asp:Menu>
+            </td>
+            <td class="style10">
+                <asp:Label ID="Label1" runat="server" Text="Потребител: " 
+                    style="color: #990000"></asp:Label>
+                <asp:Label
+                    ID="LabelAdmin" runat="server" Font-Italic="True" ></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LinkButtonExit" runat="server" 
+                    CausesValidation="False" onclick="LinkButtonExit_Click">Изход</asp:LinkButton>
+                <br /><br /><br />
+                <asp:ContentPlaceHolder ID="nestedmain" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+            ShowStartingNode="False" StartingNodeUrl="~/Admin/Admin" />
+    </table>
+</asp:Content>

@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D40CDD64-DCFE-4493-A5C1-34F9E18DA0B1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eRegister1</RootNamespace>
+    <AssemblyName>eRegister1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\2573403882_7322cf2233_b.jpg" />
+    <Content Include="Admin\Absence.aspx" />
+    <Content Include="Admin\AvSuccess.aspx" />
+    <Content Include="Admin\ClassDevisionDetails.aspx" />
+    <Content Include="Admin\Classes.aspx" />
+    <Content Include="Admin\DefaultAdmin.aspx" />
+    <Content Include="Admin\Divisions.aspx" />
+    <Content Include="Admin\EditTeachers.aspx" />
+    <Content Include="Admin\Gallery.aspx" />
+    <Content Include="Admin\logo_0mg_1.jpg" />
+    <Content Include="Admin\Massages.aspx" />
+    <Content Include="Admin\MessageTypes.aspx" />
+    <Content Include="Admin\NewMessages.aspx" />
+    <Content Include="Admin\News.aspx" />
+    <Content Include="Admin\old-style-paper-backgrounds-for-powerpoint.jpg" />
+    <Content Include="Admin\old_book_texture_by_rinoatimber.jpg" />
+    <Content Include="Admin\old_paper_background copy-1280x1024.jpg" />
+    <Content Include="Admin\old_paper_background-wallpaper-1440x900.jpg" />
+    <Content Include="Admin\Profil.aspx" />
+    <Content Include="Admin\Query.aspx" />
+    <Content Include="Admin\Register.aspx" />
+    <Content Include="Admin\Schedules.aspx" />
+    <Content Include="Admin\Schoole.aspx" />
+    <Content Include="Admin\Scroll-background.png" />
+    <Content Include="Admin\SentMessages.aspx" />
+    <Content Include="Admin\Status.aspx" />
+    <Content Include="Admin\StudyYear.aspx" />
+    <Content Include="Admin\Subjects.aspx" />
+    <Content Include="Admin\SuccessStudent.aspx" />
+    <Content Include="Admin\Teachers.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="eRegister.aspx" />
+    <Content Include="NewsDetail.aspx" />
+    <Content Include="Schoole.aspx" />
+    <Content Include="Student\Absences.aspx" />
+    <Content Include="Student\ChangePassword.aspx" />
+    <Content Include="Student\DefaultStudent.aspx" />
+    <Content Include="Student\Draft.aspx" />
+    <Content Include="Student\Massages.aspx" />
+    <Content Include="Student\NewMessages.aspx" />
+    <Content Include="Student\Schedules.aspx" />
+    <Content Include="Student\SchoolReport.aspx" />
+    <Content Include="Student\SentMessages.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Teachers.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebService1.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Absence.aspx.cs">
+      <DependentUpon>Absence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Absence.aspx.designer.cs">
+      <DependentUpon>Absence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AvSuccess.aspx.cs">
+      <DependentUpon>AvSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AvSuccess.aspx.designer.cs">
+      <DependentUpon>AvSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ClassDevisionDetails.aspx.cs">
+      <DependentUpon>ClassDevisionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ClassDevisionDetails.aspx.designer.cs">
+      <DependentUpon>ClassDevisionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DefaultAdmin.aspx.cs">
+      <DependentUpon>DefaultAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\DefaultAdmin.aspx.designer.cs">
+      <DependentUpon>DefaultAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Divisions.aspx.cs">
+      <DependentUpon>Divisions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Divisions.aspx.designer.cs">
+      <DependentUpon>Divisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditTeachers.aspx.cs">
+      <DependentUpon>EditTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditTeachers.aspx.designer.cs">
+      <DependentUpon>EditTeachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Massages.aspx.cs">
+      <DependentUpon>Massages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Massages.aspx.designer.cs">
+      <DependentUpon>Massages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MessageTypes.aspx.cs">
+      <DependentUpon>MessageTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MessageTypes.aspx.designer.cs">
+      <DependentUpon>MessageTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewMessages.aspx.cs">
+      <DependentUpon>NewMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewMessages.aspx.designer.cs">
+      <DependentUpon>NewMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Profil.aspx.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Profil.aspx.designer.cs">
+      <DependentUpon>Profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Query.aspx.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Query.aspx.designer.cs">
+      <DependentUpon>Query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Schedules.aspx.cs">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Schedules.aspx.designer.cs">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Schoole.aspx.cs">
+      <DependentUpon>Schoole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Schoole.aspx.designer.cs">
+      <DependentUpon>Schoole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SentMessages.aspx.cs">
+      <DependentUpon>SentMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SentMessages.aspx.designer.cs">
+      <DependentUpon>SentMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Status.aspx.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Status.aspx.designer.cs">
+      <DependentUpon>Status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudyYear.aspx.cs">
+      <DependentUpon>StudyYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\StudyYear.aspx.designer.cs">
+      <DependentUpon>StudyYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Subjects.aspx.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Subjects.aspx.designer.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SuccessStudent.aspx.cs">
+      <DependentUpon>SuccessStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SuccessStudent.aspx.designer.cs">
+      <DependentUpon>SuccessStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Teachers.aspx.cs">
+      <DependentUpon>Teachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Teachers.aspx.designer.cs">
+      <DependentUpon>Teachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eRegister.aspx.cs">
+      <DependentUpon>eRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eRegister.aspx.designer.cs">
+      <DependentUpon>eRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage1.Master.cs">
+      <DependentUpon>MasterPage1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage1.Master.designer.cs">
+      <DependentUpon>MasterPage1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MasterPage2.master.cs">
+      <DependentUpon>MasterPage2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MasterPage2.master.designer.cs">
+      <DependentUpon>MasterPage2.master</DependentUpon>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schoole.aspx.cs">
+      <DependentUpon>Schoole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schoole.aspx.designer.cs">
+      <DependentUpon>Schoole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Absences.aspx.cs">
+      <DependentUpon>Absences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Absences.aspx.designer.cs">
+      <DependentUpon>Absences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\DefaultStudent.aspx.cs">
+      <DependentUpon>DefaultStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\DefaultStudent.aspx.designer.cs">
+      <DependentUpon>DefaultStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Draft.aspx.cs">
+      <DependentUpon>Draft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Draft.aspx.designer.cs">
+      <DependentUpon>Draft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Massages.aspx.cs">
+      <DependentUpon>Massages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Massages.aspx.designer.cs">
+      <DependentUpon>Massages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\MasterPage5.master.cs">
+      <DependentUpon>MasterPage5.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\MasterPage5.master.designer.cs">
+      <DependentUpon>MasterPage5.master</DependentUpon>
+    </Compile>
+    <Compile Include="Student\NewMessages.aspx.cs">
+      <DependentUpon>NewMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\NewMessages.aspx.designer.cs">
+      <DependentUpon>NewMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\Schedules.aspx.cs">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\Schedules.aspx.designer.cs">
+      <DependentUpon>Schedules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\SchoolReport.aspx.cs">
+      <DependentUpon>SchoolReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\SchoolReport.aspx.designer.cs">
+      <DependentUpon>SchoolReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student\SentMessages.aspx.cs">
+      <DependentUpon>SentMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student\SentMessages.aspx.designer.cs">
+      <DependentUpon>SentMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teachers.aspx.cs">
+      <DependentUpon>Teachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teachers.aspx.designer.cs">
+      <DependentUpon>Teachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\MasterPage2.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Student\MasterPage5.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eRegisterData\eRegisterData.csproj">
+      <Project>{09DB2FB0-1A97-439D-B31A-E25AC0D19DFE}</Project>
+      <Name>eRegisterData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16420</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

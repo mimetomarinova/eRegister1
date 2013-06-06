@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage1.master.cs"
+    Inherits="eRegister1.MasterPage1" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    public string imgPath = System.Web.VirtualPathUtility.ToAbsolute("~/Admin/old_paper_background-wallpaper-1440x900.jpg");
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Система "Електронни дневници"</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style2
+        {
+            height: 461px;
+        }
+        #form1
+        {
+            width: 79%;
+            height: 776px;
+        }
+        .style4
+        {
+            height: 42px;
+            width: 580px;
+            text-align: center;
+            font-size: x-large;
+        }
+        .style6
+        {
+            height: 35px;
+            width: 118px;
+        }
+        .style7
+        {
+            height: 42px;
+            width: 118px;
+            font-size: x-large;
+        }
+        .style8
+        {
+            height: 6px;
+        }
+        .hideSkiplink
+        {
+            height: 33px;
+        }
+    </style>
+</head>
+<body style="width: 127%; background-image: url('<%= imgPath %>'); background-repeat: no-repeat;
+    height: 787px;">
+    <form id="form1" runat="server">
+    <div style="width: 1080px; height: 781px; margin-top: auto; margin-bottom: auto;
+        text-align: center;">
+        <table style="margin: auto; border: thin solid #000000; border-collapse: collapse;
+            border-spacing: inherit; width: 75%; height: 778px; background-image: url('/Admin/2573403882_7322cf2233_b.jpg');
+            background-repeat: no-repeat; z-index: 1;">
+            <tr>
+                <td class="style7" 
+                    style="border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: thin; border-bottom-width: thin; border-left-width: thin; border-top-color: #000000; border-bottom-color: #000000; border-left-color: #000000; padding-left: 60px;">
+                    <asp:Image ID="Image1" runat="server" Height="81px" 
+                        ImageUrl="~/Admin/logo_0mg_1.jpg" />
+                </td>
+                <td class="style4" style="border: thin solid #000000">
+                    <marquee direction= "left" style="color: #990000" >
+                        <asp:Label ID="Label1" runat="server"  Text="Образцова Математическа Гимназия 'Акад. Кирил Попов' - Пловдив">
+                   
+                        </asp:Label></marquee>
+                </td>
+            </tr>
+            <tr>
+                <td class="style6">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False"
+                        StartingNodeUrl="Users" />
+                </td>
+                <td>
+                    <div class="clear hideSkiplink">
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" Orientation="Horizontal"
+                            EnableViewState="false" IncludeStyleBlock="false" DataSourceID="SiteMapDataSource1">
+                        </asp:Menu>
+                    </div>
+                </td>
+            </tr>
+            <tr style="border: thin solid #000000">
+                <td colspan="2" class="style2" valign="top">
+                    <div>
+                        <asp:ContentPlaceHolder ID="main" runat="server">
+                            <asp:Panel ID="Panel1" runat="server" ScrollBars="Auto" Style="text-align: left">
+                            </asp:Panel>
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#FFCC66" style="border: thin solid #000000" class="style8">
+                    © 2012г. Мария Маринова
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
