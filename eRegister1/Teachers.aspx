@@ -20,10 +20,10 @@
     
             <asp:DropDownList  ID="DropDownListSubject" runat="server" CssClass="style12" Height="33px" 
                 Width="178px" >
-            </asp:DropDownList>
+            </asp:DropDownList><%--UseContextKey="True"--%> <%--EmptyText="Няма елементи" --%>
             <asp:CascadingDropDown ID="DropDownListSubject_CascadingDropDown" runat="server" 
-                Enabled="True" TargetControlID="DropDownListSubject" UseContextKey="True" 
-                Category="Subj" EmptyText="Няма елементи" 
+                Enabled="True" TargetControlID="DropDownListSubject" 
+                Category="Subj" 
                 LoadingText="Зарежда се списък на предметите" PromptText="Изберете предмет" 
                 ServiceMethod="GetSubj" ServicePath="~/WebService1.asmx">
                 

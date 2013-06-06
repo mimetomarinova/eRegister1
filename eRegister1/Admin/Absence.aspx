@@ -3,7 +3,7 @@
 
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
 
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="nestedmain" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server">
